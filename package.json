@@ -1,0 +1,19 @@
+{
+  "name": "react-optical-illusions",
+  "version": "1.0.1",
+  "main": "index.js",
+  "scripts": {
+  "build": "babel src --out-dir dist --copy-files",
+  "prepublishOnly": "npm run build"
+},
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "description": "this is open source project optical illusion",
+  "devDependencies": {
+    "@babel/cli": "^7.26.4",
+    "@babel/core": "^7.26.8",
+    "@babel/preset-env": "^7.26.8",
+    "@babel/preset-react": "^7.26.3"
+  }
+}
