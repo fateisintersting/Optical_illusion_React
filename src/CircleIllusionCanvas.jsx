@@ -1,6 +1,6 @@
 import React, { useEffect, useRef } from "react";
 
-export default function CircleIllusionCanvas({balls =10,speed = 1000,varient = 1}) {
+export default function CircleIllusionCanvas({balls =10,speed = 1000,varient = 1,radius=20,width=400,height=500,objectcolor="white",backgroundcolor="black"}) {
   const canvasRef = useRef(null);
 
   useEffect(() => {
@@ -9,18 +9,19 @@ export default function CircleIllusionCanvas({balls =10,speed = 1000,varient = 1
     const ctx = canvas.getContext("2d");
 
     
-    const width = window.innerWidth;
-    const height = window.innerHeight;
+    // const width = window.innerWidth;
+    // const height = window.innerHeight;
+    
     canvas.width = width;
     canvas.height = height;
     ctx.translate(width/2,height/2)
 
 
     // Draw Function
-    const draw = (x, y, radius = 20) => {
+    const draw = (x, y, radius) => {
       ctx.beginPath();
       ctx.arc(x, y, radius, 0, Math.PI * 2);
-      ctx.fillStyle = "white";
+      ctx.fillStyle = objectcolor;
       ctx.fill();
     };
 
@@ -49,7 +50,7 @@ export default function CircleIllusionCanvas({balls =10,speed = 1000,varient = 1
   return (
     <canvas
       ref={canvasRef}
-      style={{ background: "black", }}
+      style={{ background: backgroundcolor, }}
     />
   );
 }

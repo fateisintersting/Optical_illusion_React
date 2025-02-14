@@ -1,6 +1,6 @@
 {
   "name": "react-optical-illusions",
-  "version": "1.0.1",
+  "version": "2.0.1",
   "main": "index.js",
   "scripts": {
   "build": "babel src --out-dir dist --copy-files",

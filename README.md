@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # 🎭 react-optical-illusions
 
 A **React library** for creating mesmerizing **optical illusions** using HTML5 Canvas. This package allows you to integrate visually stunning illusions into your React applications effortlessly.
@@ -9,10 +10,7 @@ Install via npm:
 npm install react-optical-illusions
 ```
 
-or with yarn:
-```sh
-yarn add react-optical-illusions
-```
+
 
 ## 🚀 Usage
 
@@ -59,3 +57,6 @@ MIT License. See `LICENSE` for more details.
 
 ## 🌟 Support
 If you like this package, give it a ⭐ on [GitHub](https://github.com/fateisintersting/Optical_illusion_React)!
+=======
+# Optical_illusion_React
+>>>>>>> 9bbe4c6e7618dee65e1888a5b8f80c7c03ac6903
